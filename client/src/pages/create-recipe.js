@@ -27,7 +27,8 @@ export const CreateRecipe=()  => {
   const onSubmit=async(event)=>{
 event.preventDefault();
 try{
-await axios.post("")
+await axios.post("http://localhost:3001/recipes",recipe);
+alert("Recipe created");
 }catch(err){
 console.error(err);
 };
